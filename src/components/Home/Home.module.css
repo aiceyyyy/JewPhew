@@ -1,0 +1,15 @@
+@keyframes bounce {
+	0% {
+		transform: translateY(0px);
+	}
+	50% {
+		transform: translateY(25px);
+	}
+	100% {
+		transform: translateY(0px);
+	}
+}
+
+.bounce {
+    animation: bounce 1500ms ease-in-out 500ms infinite normal none;
+}

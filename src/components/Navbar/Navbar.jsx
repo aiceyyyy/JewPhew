@@ -22,8 +22,20 @@ export const Navbar = () => {
 	]
 
 	const [screenWidth, setScreenWidth] = useState(window.innerWidth)
+	const [scrollY, setScrollY] = useState(0)
 
-	// Handling window resize
+	useEffect(() => {
+		const handleScroll = () => {
+			setScrollY(window.scrollY)
+		}
+		window.addEventListener('scroll', handleScroll)
+		return () => {
+			window.removeEventListener('scroll', handleScroll)
+		}
+	}, [window.scrollY])
+
+	const dynamicNavStyle = scrollY >= 100 ? 'rgb(51 65 85)' : 'transparent'
+
 	const handleResize = () => {
 		setScreenWidth(window.innerWidth)
 	}
@@ -37,9 +49,15 @@ export const Navbar = () => {
 	}, [])
 
 	return (
-		<div className='w-screen flex justify-between fixed top-0 left-0 p-1 xs:px-1 sm:px-10 bg-slate-700'>
+		<div
+			style={{ backgroundColor: dynamicNavStyle }}
+			className='w-screen flex justify-between fixed top-0 left-0 p-1 xs:px-1 sm:px-10 transition-all duration-500'>
 			<div className='flex justify-center items-center p-3'>
-				<a className='text-3xl font-bold text-white hover:text-purple-500 transition-all duration-300 cursor-pointer' href='#'>JewPhew</a>
+				<a
+					className='text-3xl font-bold text-white hover:text-purple-500 transition-all duration-300 cursor-pointer'
+					href='#'>
+					JewPhew
+				</a>
 			</div>
 			<div className='flex justify-center items-center mr-auto ml-10 lg:ml-20 px-auto'>
 				{screenWidth > 798 &&

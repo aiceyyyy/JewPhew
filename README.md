@@ -2,7 +2,7 @@
 Better README.md when project is finished!
 
 # Progress
-✅Navbar
+✅Navbar (correct mobile view of menu&cart)
 <br>
 ❌Interesting home section
 <br>

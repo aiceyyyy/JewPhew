@@ -17,7 +17,7 @@ export const Home = () => {
 					</p>
 				</div>
 			</div>
-            //! Fix button position
+            {/* Fix button position */}
 			<button className={`absolute mx-auto left-1/2 bottom-10 rounded-full xs:p-4 lg:p-6 text-2xl ${classes.bounce}`}>
 				<HiChevronDoubleDown />
 			</button>

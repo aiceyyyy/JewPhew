@@ -1,7 +1,16 @@
 import { useState, useEffect } from 'react'
 import { NavbarCart } from './NavbarCart'
 
-export const Navbar = () => {
+export const Navbar = (props) => {
+
+	const [isMobileMenuShown, setIsMobileMenuShown] = useState('')
+
+
+	const onCollect = (data) => {
+		setIsMobileMenuShown(data);
+		props.onImport(data)
+	}
+
 	const navTexts = [
 		{
 			id: 1,
@@ -51,7 +60,7 @@ export const Navbar = () => {
 	return (
 		<div
 			style={{ backgroundColor: dynamicNavStyle }}
-			className='w-screen flex justify-between fixed top-0 left-0 p-1 px-auto xs:px-1 sm:px-10 transition-all duration-300 z-50'>
+			className='w-screen flex justify-between fixed top-0 left-0 p-1 px-auto xs:px-1 sm:px-10 transition-all duration-300 z-40'>
 			<div className='flex justify-center items-center p-3'>
 				<a
 					className='text-3xl font-bold text-white hover:text-purple-500 transition-all duration-300 cursor-pointer'
@@ -69,7 +78,7 @@ export const Navbar = () => {
 						</a>
 					))}
 			</div>
-			<NavbarCart />
+			<NavbarCart onCollect={onCollect}/>
 		</div>
 	)
 }

@@ -20,13 +20,13 @@ export const NavbarCart = () => {
 
 	return (
 		<div className='flex xs:p-3 sm:p-5 justify-between items-center text-4xl'>
-			<IoBagOutline className='relative xs:mr-3 lg:mr-10 text-white hover:text-purple-500 transition-all duration-300 cursor-pointer' />
+			<IoBagOutline className='relative xs:mr-5 lg:mr-10 text-white hover:text-purple-500 transition-all duration-300 cursor-pointer' />
 			<span
 				className='absolute top-1/2 flex justify-center items-center ml-5 bg-slate-300 w-[20px] h-[20px] text-sm rounded-full text-slate-700 font-bold' >
 				1
 			</span>
 			{screenWidth < 798 && (
-				<FaBars className='flex justify-center items-center mr-5 text-white hover:text-purple-500 transition-all duration-300 cursor-pointer' />
+				<FaBars className='flex justify-center items-center  text-white hover:text-purple-500 transition-all duration-300 cursor-pointer' />
 			)}
 		</div>
 	)

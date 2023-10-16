@@ -4,7 +4,7 @@ Better README.md when project is finished!
 # Progress
 ✅Navbar
 <br>
-❌Interesting home section
+✅Interesting home section
 <br>
 ❌Cart
 <br>

@@ -1,0 +1,68 @@
+.backdrop {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100vw;
+	height: 100vh;
+	z-index: 50;
+	background-color: rgba(0, 0, 0, 0.75);
+	animation: reveal 400ms ease-in-out 1 normal none;
+}
+
+.nav {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	animation: reveal 400ms ease-in-out 1 normal none;
+	background-color: white;
+	height: 100vh;
+	width: 33.3%;
+	color: rgb(51 65 85);
+}
+
+.link {
+	margin-bottom: 80px;
+	font-size: 30px;
+	line-height: 36px;
+	font-weight: bold;
+	color: rgb(51 65 85);
+	cursor: pointer;
+	transition: all 300ms;
+}
+
+.link:hover {
+	color: rgb(168 85 247);
+}
+
+.button {
+	margin-bottom: 80px;
+	background-color: white;
+	transition: all 300ms;
+	cursor: pointer;
+}
+
+.button:hover {
+	color: rgb(168 85 247);
+}
+
+.arrow {
+    font-size: 30px;
+	line-height: 36px;
+}
+
+.navItems {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+@keyframes reveal {
+	0% {
+		transform: translateX(-100%);
+	}
+
+	100% {
+		transform: translateX(0);
+	}
+}

@@ -4,11 +4,11 @@ Better README.md when project is finished!
 # Progress
 ✅Navbar
 <br>
-✅Interesting home section
+⚒️Interesting home section(fix button)
+<br>
+⚒️Mobile menu(can't close yet)
 <br>
 ❌Cart
-<br>
-❌Mobile menu
 <br>
 ❌About Us section
 <br>

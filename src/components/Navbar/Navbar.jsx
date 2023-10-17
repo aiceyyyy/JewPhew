@@ -43,7 +43,7 @@ export const Navbar = (props) => {
 		}
 	}, [window.scrollY])
 
-	const dynamicNavStyle = scrollY >= 100 ? 'rgb(51 65 85)' : 'transparent'
+	const dynamicNavStyle = scrollY >= 50 ? 'rgb(51 65 85)' : 'transparent'
 
 	const handleResize = () => {
 		setScreenWidth(window.innerWidth)

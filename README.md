@@ -10,7 +10,7 @@ Better README.md when project is finished!
 <br>
 ✅Resources section
 <br>
-❌Products section with filter option
+⚒️Products section with filter option
 <br>
 ❌Contact Section
 <br>

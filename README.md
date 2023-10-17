@@ -4,9 +4,9 @@ Better README.md when project is finished!
 # Progress
 ✅Navbar
 <br>
-⚒️Interesting home section(fix button)
+✅Home section
 <br>
-⚒️Mobile menu(can't close yet)
+⚒️Mobile menu(fix - double click needed)
 <br>
 ❌Cart
 <br>

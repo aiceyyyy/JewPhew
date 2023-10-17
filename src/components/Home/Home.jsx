@@ -11,7 +11,7 @@ export const Home = () => {
 					src={path}
 					alt='diamond'
 				/>
-				<div className='h-3/5 mt-5 mb-20 xs:p-10 lg:px-24'>
+				<div className='h-3/5 mt-5 mb-10 xs:p-10 lg:px-24'>
 					<h2 className='max-w-[300px] mb-7 text-4xl uppercase font-thin tracking-wide text-gray-600 xs:text-center lg:text-left'>
 						Bestseller
 					</h2>

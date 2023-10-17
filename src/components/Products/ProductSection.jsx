@@ -1,7 +1,7 @@
 export const ProductSection = () => {
 	return (
 		<>
-			<div className='w-[75vw] flex justify-end items-center mt-20 mx-auto'>
+			<div className='w-[75vw] flex xs:justify-center lg:justify-end items-center mt-20 mx-auto'>
 				<label className='mr-5' for='products'>
 					Filter products
 				</label>

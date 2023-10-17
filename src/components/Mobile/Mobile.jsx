@@ -9,15 +9,15 @@ export const Mobile = props => {
 		},
 		{
 			id: 2,
-			content: 'Silver',
+			content: 'Diamond',
 		},
 		{
 			id: 3,
-			content: 'Gold',
+			content: 'Silver',
 		},
 		{
 			id: 4,
-			content: 'Amber',
+			content: 'Gold',
 		},
 	]
 

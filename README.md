@@ -8,9 +8,7 @@ Better README.md when project is finished!
 <br>
 ⚒️Mobile menu(fix - double click needed)
 <br>
-❌Cart
-<br>
-❌About Us section
+✅Resources section
 <br>
 ❌Products section with filter option
 <br>
@@ -21,3 +19,5 @@ Better README.md when project is finished!
 ❌RWD
 <br>
 ❌SEO
+<br>
+❌Cart

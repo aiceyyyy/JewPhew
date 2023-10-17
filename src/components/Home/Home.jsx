@@ -12,12 +12,12 @@ export const Home = () => {
 					src={img}
 					alt='diamond'
 				/>
-				<div className='h-3/5 mb-5 xs:p-10 lg:px-24 text-center lg:text-left'>
-					<h2 className='max-w-[300px] mb-5 text-4xl uppercase font-thin tracking-wide text-gray-600 text-center lg:text-left'>
+				<div className='h-3/5 mb-5 xs:p-10 lg:px-24'>
+					<h2 className='mb-5 text-4xl uppercase font-thin tracking-wide text-gray-600'>
 						Bestseller
 					</h2>
-					<p className='max-w-[300px] mb-5 text-3xl font-bold text-center lg:text-left'>Oppenheimer Blue</p>
-					<p className='max-w-[400px] xs:text-center lg:text-left'>
+					<p className='max-w-[300px] mb-5 text-3xl font-bold'>Oppenheimer Blue</p>
+					<p className='max-w-[400px] text-left'>
 						The Oppenheimer Blue is a 14.62-carat (2.924 g) vivid blue diamond that in May 2016 became the most
 						expensive jewel ever sold at auction, until April 2017 when it was surpassed by the Pink Star diamond. The
 						diamond was named for its previous owner Philip Oppenheimer.It is cut into a rectangle (emerald cut).The

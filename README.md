@@ -6,9 +6,9 @@ Better README.md when project is finished!
 <br>
 ✅Home section
 <br>
-⚒️Mobile menu(fix - double click needed)
-<br>
 ✅Resources section
+<br>
+⚒️Mobile menu(fix or rebuild)
 <br>
 ⚒️Products section with filter option
 <br>

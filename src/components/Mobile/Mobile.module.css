@@ -17,7 +17,7 @@
 	animation: reveal 400ms ease-in-out 1 normal none;
 	background-color: white;
 	height: 100vh;
-	width: 33.3%;
+	width: 40%;
 	color: rgb(51 65 85);
 }
 
@@ -29,6 +29,7 @@
 	color: rgb(51 65 85);
 	cursor: pointer;
 	transition: all 300ms;
+	padding-inline: 5px;
 }
 
 .link:hover {

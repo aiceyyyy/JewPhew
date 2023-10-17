@@ -5,18 +5,21 @@ import { Mobile } from './components/Mobile/Mobile'
 import { Navbar } from './components/Navbar/Navbar'
 
 export const App = () => {
-	const [isMobileMenuRevealed, setIsMobileMenuRevealed] = useState(true)
+	const [isMobileMenuRevealed, setIsMobileMenuRevealed] = useState(false)
 
 	const onImport = data => {
 		setIsMobileMenuRevealed(data)
-		console.log(isMobileMenuRevealed);
+	}
+
+	const closeNav = () => {
+		setIsMobileMenuRevealed(false)
 	}
 
 	return (
 		<>
-				<Mobile menuState={isMobileMenuRevealed} />
-				<Navbar onImport={onImport} />
-				<Home />
+			<Mobile onCollect={closeNav} menuState={isMobileMenuRevealed} />
+			<Navbar onImport={onImport} />
+			<Home />
 		</>
 	)
 }

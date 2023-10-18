@@ -1,10 +1,11 @@
 import path from '../../assets/Screenshot_3.png'
 import img from '../../assets/silver.jpg'
 import pic from '../../assets/gold.jpeg'
+import Font from 'react-font'
 
 export const Resources = () => {
 	return (
-		<>
+		<Font family='Open Sans'>
 			<div className='flex flex-col items-center w-screen text-center  xs:mb-40 lg:mt-10 lg:mb-0'>
 				<h1 className='font-bold tracking-wide'>Diamonds</h1>
 				<div>
@@ -70,6 +71,6 @@ export const Resources = () => {
 					</p>
 				</div>
 			</div>
-		</>
+		</Font>
 	)
 }

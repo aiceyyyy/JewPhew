@@ -8,7 +8,7 @@ Better README.md when project is finished!
 <br>
 ✅Resources section
 <br>
-⚒️Mobile menu(fix or rebuild)
+⚒️Mobile menu(rebuilding logic)
 <br>
 ⚒️Products section with filter option
 <br>

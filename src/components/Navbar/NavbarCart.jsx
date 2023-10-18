@@ -2,24 +2,13 @@ import { useState, useEffect} from 'react'
 import { IoBagOutline } from 'react-icons/io5'
 import { FaBars } from 'react-icons/fa6'
 
-export const NavbarCart = (props) => {
+export const NavbarCart = () => {
 
 	const [screenWidth, setScreenWidth] = useState(window.innerWidth)
-	const [isRevealed, setIsRevealed] = useState(false)
 
 	// Handling window resize
 	const handleResize = () => {
 		setScreenWidth(window.innerWidth)
-	}
-
-	const toggleNav = () => {
-		if(isRevealed) {
-			setIsRevealed(false)
-		} else {
-			setIsRevealed(true)
-		}
-
-		props.onCollect(isRevealed)
 	}
 
 	useEffect(() => {
@@ -38,7 +27,7 @@ export const NavbarCart = (props) => {
 				1
 			</span>
 			{screenWidth < 798 && (
-				<FaBars onClick={toggleNav} className='flex justify-center items-center  text-white hover:text-purple-500 transition-all duration-300 cursor-pointer' />
+				<FaBars className='flex justify-center items-center  text-white hover:text-purple-500 transition-all duration-300 cursor-pointer' />
 			)}
 		</div>
 	)

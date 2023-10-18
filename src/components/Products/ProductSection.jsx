@@ -2,7 +2,7 @@ export const ProductSection = () => {
 	return (
 		<>
 			<div className='w-[75vw] flex xs:justify-center lg:justify-end items-center mt-20 mx-auto'>
-				<label className='mr-5' for='products'>
+				<label className='mr-5' htmlFor='products'>
 					Filter products
 				</label>
 				<select id='products' name='products' defaultChecked='All'>

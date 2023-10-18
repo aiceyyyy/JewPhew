@@ -1,4 +1,3 @@
-import { useState } from 'react'
 import './App.css'
 import { Home } from './components/Home/Home'
 import { Mobile } from './components/Mobile/Mobile'
@@ -7,20 +6,10 @@ import { Resources } from './components/Resources/Resources'
 import { ProductSection } from './components/Products/ProductSection'
 
 export const App = () => {
-	const [isMobileMenuRevealed, setIsMobileMenuRevealed] = useState(false)
-
-	const onImport = data => {
-		setIsMobileMenuRevealed(data)
-	}
-
-	const closeNav = () => {
-		setIsMobileMenuRevealed(false)
-	}
-
 	return (
 		<>
-			<Mobile onCollect={closeNav} menuState={isMobileMenuRevealed} />
-			<Navbar onImport={onImport} />
+			<Mobile />
+			<Navbar />
 			<Home />
 			<Resources />
 			<ProductSection />

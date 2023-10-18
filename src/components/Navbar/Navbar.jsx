@@ -1,15 +1,7 @@
 import { useState, useEffect } from 'react'
 import { NavbarCart } from './NavbarCart'
 
-export const Navbar = (props) => {
-
-	const [isMobileMenuShown, setIsMobileMenuShown] = useState('')
-
-
-	const onCollect = (data) => {
-		setIsMobileMenuShown(data);
-		props.onImport(data)
-	}
+export const Navbar = () => {
 
 	const navTexts = [
 		{
@@ -78,7 +70,7 @@ export const Navbar = (props) => {
 						</a>
 					))}
 			</div>
-			<NavbarCart onCollect={onCollect}/>
+			<NavbarCart/>
 		</div>
 	)
 }

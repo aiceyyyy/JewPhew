@@ -1,7 +1,7 @@
 import classes from './Mobile.module.css'
 import { FiArrowLeft } from 'react-icons/fi'
 
-export const Mobile = props => {
+export const Mobile = () => {
 	const navTexts = [
 		{
 			id: 1,
@@ -30,17 +30,13 @@ export const Mobile = props => {
 		</a>
 	))
 
-	const closeNav = () => {
-		props.onCollect(false)
-	}
-
 	return (
-		<div className={!props.menuState ? 'hidden' : classes.backdrop}>
+		<div className={true ? 'hidden' : classes.backdrop}>
 			<div className={classes.nav}>
 				<a className={classes.link} href='#'>
 					JewPhew
 				</a>
-				<button onClick={closeNav} className={classes.button}>
+				<button className={classes.button}>
 					<FiArrowLeft className={classes.arrow} />
 				</button>
 				<div className={classes.navItems}>{navItems}</div>

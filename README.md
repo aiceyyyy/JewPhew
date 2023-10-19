@@ -6,7 +6,7 @@ Better README.md when project is finished!
 <br>
 ✅Home section
 <br>
-✅Resources section
+✅Resources section (🛠️remove section height - mobile covering)
 <br>
 ✅Products section with filter option
 <br>

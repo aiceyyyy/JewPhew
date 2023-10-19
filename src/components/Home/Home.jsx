@@ -12,7 +12,7 @@ export const Home = () => {
 						alt='diamond'
 					/>
 					<div className='h-3/5 mb-5 xs:p-10 lg:px-24'>
-						<h2 className='mb-5 text-4xl uppercase font-thin tracking-wide text-gray-600'>Bestseller</h2>
+						<h2 className='mb-5 text-4xl uppercase font-thin tracking-wide text-purple-500'>Bestseller</h2>
 						<h1 className='max-w-[300px] mb-5 text-3xl font-bold'>Oppenheimer Blue</h1>
 						<p className='max-w-[400px] text-left'>
 							The Oppenheimer Blue is a 14.62-carat (2.924 g) vivid blue diamond that in May 2016 became the most

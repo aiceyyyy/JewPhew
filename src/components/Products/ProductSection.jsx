@@ -1,3 +1,4 @@
+import { useState } from 'react'
 import { Product } from './Product'
 import g1 from '../../products_assets/gold/gold1.jpeg'
 import g2 from '../../products_assets/gold/gold2.jpeg'
@@ -232,13 +233,19 @@ export const ProductSection = () => {
 		},
 	]
 
+	const [selectedFilter, setSelectedFilter] = useState('All')
+
+	const changeType = e => {
+		setSelectedFilter(e.target.value)
+	}
+
 	return (
 		<div className='mb-20'>
 			<div className='w-[75vw] flex xs:justify-center lg:justify-end items-center mt-20 mx-auto'>
 				<label className='mr-5' htmlFor='products'>
 					Filter products
 				</label>
-				<select id='products' name='products' defaultChecked='All'>
+				<select onChange={changeType} id='products' name='products'>
 					<option value='All'>All</option>
 					<option value='Diamonds'>Diamonds</option>
 					<option value='Silver'>Silver</option>
@@ -247,15 +254,18 @@ export const ProductSection = () => {
 			</div>
 			<div className='flex flex-col justify-center items-center w-[75vw] mx-auto mt-5'>
 				<div className='flex flex-wrap justify-center'>
-					{PRODUCTS_DATA.map(product => (
-						<Product
-							key={product.id}
-							path={product.path}
-							price={product.price}
-							name={product.name}
-							content={product.content}
-						/>
-					))}
+					{PRODUCTS_DATA.map(
+						product =>
+							selectedFilter === product.type && (
+								<Product
+									key={product.id}
+									path={product.path}
+									price={product.price}
+									name={product.name}
+									content={product.content}
+								/>
+							)
+					)}
 				</div>
 			</div>
 		</div>

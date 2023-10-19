@@ -8,6 +8,8 @@ Better README.md when project is finished!
 <br>
 ✅Resources section
 <br>
+❓Fix packages.json files (deployment error)
+<br>
 ⚒️Mobile menu(rebuilding logic)
 <br>
 ⚒️Products section with filter option

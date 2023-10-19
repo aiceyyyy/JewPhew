@@ -197,7 +197,7 @@ export const ProductSection = () => {
 			price: 'Indyvidual pricing',
 			name: 'Pink Diamond',
 			content: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, officiis?',
-			type: 'DIAMOND',
+			type: 'DIAMONDS',
 		},
 		{
 			id: 'p22',
@@ -205,7 +205,7 @@ export const ProductSection = () => {
 			price: 'Indyvidual pricing',
 			name: 'Oppenheimer',
 			content: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, officiis?',
-			type: 'DIAMOND',
+			type: 'DIAMONDS',
 		},
 		{
 			id: 'p23',
@@ -213,7 +213,7 @@ export const ProductSection = () => {
 			price: 'Indyvidual pricing',
 			name: 'White Diamond',
 			content: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, officiis?',
-			type: 'DIAMOND',
+			type: 'DIAMONDS',
 		},
 		{
 			id: 'p24',
@@ -221,7 +221,7 @@ export const ProductSection = () => {
 			price: 'Indyvidual pricing',
 			name: 'Red Diamond',
 			content: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, officiis?',
-			type: 'DIAMOND',
+			type: 'DIAMONDS',
 		},
 		{
 			id: 'p25',
@@ -229,14 +229,15 @@ export const ProductSection = () => {
 			price: 'Indyvidual pricing',
 			name: 'Pink Diamond',
 			content: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, officiis?',
-			type: 'DIAMOND',
+			type: 'DIAMONDS',
 		},
 	]
 
-	const [selectedFilter, setSelectedFilter] = useState('All')
+	const [selectedFilter, setSelectedFilter] = useState('ALL')
 
 	const changeType = e => {
-		setSelectedFilter(e.target.value)
+		setSelectedFilter(e.target.value.toUpperCase())
+		console.log(e.target.value.toUpperCase())
 	}
 
 	return (
@@ -254,18 +255,15 @@ export const ProductSection = () => {
 			</div>
 			<div className='flex flex-col justify-center items-center w-[75vw] mx-auto mt-5'>
 				<div className='flex flex-wrap justify-center'>
-					{PRODUCTS_DATA.map(
-						product =>
-							selectedFilter === product.type && (
-								<Product
-									key={product.id}
-									path={product.path}
-									price={product.price}
-									name={product.name}
-									content={product.content}
-								/>
-							)
-					)}
+					{PRODUCTS_DATA.filter(product => selectedFilter === 'ALL' || product.type === selectedFilter).map(product => (
+						<Product
+							key={product.id}
+							path={product.path}
+							price={product.price}
+							name={product.name}
+							content={product.content}
+						/>
+					))}
 				</div>
 			</div>
 		</div>

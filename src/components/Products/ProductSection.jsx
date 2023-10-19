@@ -241,7 +241,8 @@ export const ProductSection = () => {
 
 	return (
 		<div className='mb-20'>
-			<div className='w-[75vw] flex xs:justify-center lg:justify-end items-center mt-20 mx-auto'>
+			<h2 className='w-[75vw] text-center mx-auto mt-20 text-[50px] uppercase font-thin tracking-wider text-purple-500'>Store</h2>
+			<div className='w-[75vw] flex xs:justify-center lg:justify-end items-center mx-auto'>
 				<label className='mr-5' htmlFor='products'>
 					Filter products
 				</label>

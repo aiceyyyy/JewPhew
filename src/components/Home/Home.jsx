@@ -1,11 +1,9 @@
 import img from '../../assets/Oppenheimer.jpg'
 import classes from './Home.module.css'
 import { HiChevronDoubleDown } from 'react-icons/hi2'
-import Font from 'react-font'
 
 export const Home = () => {
 	return (
-		<Font family='Open Sans'>
 			<div className='flex flex-col justify-start items-center mt-[100px] lg:mt-[200px] w-[100vw] z-10 mx-auto'>
 				<div className='flex flex-col lg:flex-row mx-auto px-auto'>
 					<img
@@ -15,7 +13,7 @@ export const Home = () => {
 					/>
 					<div className='h-3/5 mb-5 xs:p-10 lg:px-24'>
 						<h2 className='mb-5 text-4xl uppercase font-thin tracking-wide text-gray-600'>Bestseller</h2>
-						<p className='max-w-[300px] mb-5 text-3xl font-bold'>Oppenheimer Blue</p>
+						<h1 className='max-w-[300px] mb-5 text-3xl font-bold'>Oppenheimer Blue</h1>
 						<p className='max-w-[400px] text-left'>
 							The Oppenheimer Blue is a 14.62-carat (2.924 g) vivid blue diamond that in May 2016 became the most
 							expensive jewel ever sold at auction, until April 2017 when it was surpassed by the Pink Star diamond. The
@@ -30,6 +28,5 @@ export const Home = () => {
 					<HiChevronDoubleDown />
 				</button>
 			</div>
-		</Font>
 	)
 }

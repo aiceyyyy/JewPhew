@@ -9,15 +9,15 @@ export const Mobile = () => {
 		},
 		{
 			id: 2,
-			content: 'Diamonds',
+			content: 'Resources',
 		},
 		{
 			id: 3,
-			content: 'Silver',
+			content: 'Store',
 		},
 		{
 			id: 4,
-			content: 'Gold',
+			content: 'Contact',
 		},
 	]
 

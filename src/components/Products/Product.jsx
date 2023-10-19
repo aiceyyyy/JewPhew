@@ -1,14 +1,12 @@
-import Font from 'react-font'
-
 export const Product = props => {
 	const path = props.path
 
 	return (
 		<div className='flex flex-col max-w-[250px] mx-3 my-3 py-5 px-3 bg-white rounded-xl'>
 			<img className='h-[200px] rounded-xl' src={path} alt='product' />
-			<Font family='Montserrat'>
-				<p className='text-slate-700 mt-5 text-2xl font-bold'>{props.name}</p>
-			</Font>
+
+			<p className='text-slate-700 mt-5 text-2xl font-bold'>{props.name}</p>
+
 			<p
 				className={`${
 					props.price === 'Indyvidual pricing' ? 'text-red-600' : 'text-purple-500'

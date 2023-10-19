@@ -237,7 +237,6 @@ export const ProductSection = () => {
 
 	const changeType = e => {
 		setSelectedFilter(e.target.value.toUpperCase())
-		console.log(e.target.value.toUpperCase())
 	}
 
 	return (

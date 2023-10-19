@@ -1,6 +1,5 @@
 import { useState, useEffect } from 'react'
 import { NavbarCart } from './NavbarCart'
-import Font from 'react-font'
 
 export const Navbar = () => {
 	const navTexts = [
@@ -10,15 +9,15 @@ export const Navbar = () => {
 		},
 		{
 			id: 2,
-			content: 'Diamonds',
+			content: 'Resources',
 		},
 		{
 			id: 3,
-			content: 'Silver',
+			content: 'Store',
 		},
 		{
 			id: 4,
-			content: 'Gold',
+			content: 'Contact',
 		},
 	]
 
@@ -50,7 +49,6 @@ export const Navbar = () => {
 	}, [])
 
 	return (
-		<Font family='Open Sans'>
 			<div
 				style={{ backgroundColor: dynamicNavStyle }}
 				className='w-screen flex justify-between fixed top-0 left-0 p-1 px-auto xs:px-1 sm:px-10 transition-all duration-300 z-40'>
@@ -73,6 +71,5 @@ export const Navbar = () => {
 				</div>
 				<NavbarCart />
 			</div>
-		</Font>
 	)
 }

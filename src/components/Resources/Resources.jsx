@@ -4,7 +4,7 @@ import pic from '../../assets/gold.jpeg'
 
 export const Resources = () => {
 	return (
-		<div className='w-screen py-44 flex justify-center flex-wrap mx-auto'>
+		<div id='diamonds' className='w-screen py-44 flex justify-center flex-wrap mx-auto'>
 			<div className='max-w-[250px] mx-3 my-3 py-5 px-3 rounded-xl'>
 				<h2 className='text-center text-2xl mb-5 text-purple-500 tracking-wider uppercase'>Diamonds</h2>
 				<img className='h-[200px] rounded-xl' src={path} alt='diamonds' />

@@ -5,6 +5,7 @@ import { Navbar } from './components/Navbar/Navbar'
 import { Resources } from './components/Resources/Resources'
 import { ProductSection } from './components/Products/ProductSection'
 import { Contact } from './components/Contact/Contact'
+import { Footer } from './components/Footer/Footer'
 
 export const App = () => {
 	return (
@@ -15,6 +16,7 @@ export const App = () => {
 			<Resources />
 			<ProductSection />
 			<Contact />
+			<Footer />
 		</>
 	)
 }

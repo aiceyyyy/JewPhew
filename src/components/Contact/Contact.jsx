@@ -12,13 +12,13 @@ export const Contact = () => {
 				<div className='flex justify-center items-center flex-col xs:w-[200px] md:w-[200px] h-[400px] bg-purple-500 xs:mb-16 md:mb-0 xs:mr-0 md:mr-5 rounded-lg'>
 					<p className='text-xl font-semibold'>Contact us here</p>
 					<div className='flex  justify-around items-center mt-10'>
-						<a href='#' className='text-2xl text-white hover:text-white'>
+						<a href='https://github.com/kubson52' className='text-2xl text-white hover:text-white' target='_blank' rel='noopener'>
 							<FaGithub />
 						</a>
-						<a href='#' className='text-2xl mx-5 text-white hover:text-white'>
+						<a href='https://www.instagram.com/kubsonnnnn/' className='text-2xl mx-5 text-white hover:text-white' target='_blank' rel='noopener'>
 							<FaInstagram />
 						</a>
-						<a href='#' className='text-2xl text-white hover:text-white'>
+						<a href='mailto:urbanskikontakt52@gmail.com' className='text-2xl text-white hover:text-white' target='_blank'  rel='noopener'>
 							<FaBoxArchive />
 						</a>
 					</div>

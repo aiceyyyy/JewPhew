@@ -48,14 +48,14 @@ export const ContactForm = () => {
 
 		if (nameValue === '') {
 			setIsValid(false)
-			toast('Namefield cannot be empty!', errorToast)
+			toast('Name field cannot be empty!', errorToast)
 			return null
 		} else {
 			setIsValid(true)
 		}
 		if (emailValue === '') {
 			setIsValid(false)
-			toast('Emailfield cannot be empty!', errorToast)
+			toast('Email field cannot be empty!', errorToast)
 			return null
 		} else {
 			setIsValid(true)

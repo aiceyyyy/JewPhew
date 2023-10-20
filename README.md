@@ -16,7 +16,7 @@ Better README.md when project is finished!
 <br>
 ✅RWD
 <br>
-⚒️Mobile menu(rebuilding logic)
+⚒️Mobile menu(rebuilding logic and animation)
 <br>
 ❌Cart(gonna try ;p)
 

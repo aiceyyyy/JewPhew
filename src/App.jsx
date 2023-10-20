@@ -4,6 +4,7 @@ import { Mobile } from './components/Mobile/Mobile'
 import { Navbar } from './components/Navbar/Navbar'
 import { Resources } from './components/Resources/Resources'
 import { ProductSection } from './components/Products/ProductSection'
+import { Contact } from './components/Contact/Contact'
 
 export const App = () => {
 	return (
@@ -13,6 +14,7 @@ export const App = () => {
 			<Home />
 			<Resources />
 			<ProductSection />
+			<Contact />
 		</>
 	)
 }

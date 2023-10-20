@@ -12,14 +12,14 @@ Better README.md when project is finished!
 <br>
 ✅Contact Section
 <br>
+✅Footer
+<br>
+✅RWD
+<br>
 ⚒️Mobile menu(rebuilding logic)
 <br>
-⚒️Footer
-<br>
-⚒️RWD
-<br>
-❌Cart
+❌Cart(gonna try ;p)
 
-Information as of 19/10/2023
+## Information as of 19/10/2023
 <br>
 ✅Fixed deployment error

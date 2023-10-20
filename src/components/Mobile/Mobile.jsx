@@ -6,7 +6,7 @@ export const Mobile = () => {
 		{
 			id: 1,
 			content: 'Home',
-			tp: '#'
+			tp: '#',
 		},
 		{
 			id: 2,
@@ -16,12 +16,12 @@ export const Mobile = () => {
 		{
 			id: 3,
 			content: 'Store',
-			tp: '#store'
+			tp: '#store',
 		},
 		{
 			id: 4,
 			content: 'Contact',
-			tp: '#contact'
+			tp: '#contact',
 		},
 	]
 
@@ -35,7 +35,7 @@ export const Mobile = () => {
 	))
 
 	return (
-		<div className={true ? 'hidden' : classes.backdrop}>
+		<div className={false ? classes.backdrop : 'hidden'}>
 			<div className={classes.nav}>
 				<a className={classes.link} href='#'>
 					JewPhew

@@ -43,7 +43,7 @@ export const Footer = () => {
 	return (
 		<>
 			<div className='flex justify-center items-center w-screen pt-7 px-2 text-2xl font-semibold tracking-wider bg-gray-900'>
-				<h2>Built with:</h2>
+				<h2>Powered by:</h2>
 			</div>
 			<div className='flex flex-wrap justify-center items-center w-[100vw] py-5 mx-auto bg-gray-900'>{madeWith}</div>
 			<div className='w-full h-[2px] bg-slate-800 mx-auto'></div>

@@ -240,7 +240,7 @@ export const ProductSection = () => {
 	}
 
 	return (
-		<div className='mb-20 py-20'>
+		<div id='store' className='mb-20 py-20'>
 			<h2 className='w-[75vw] text-center mx-auto mt-20 text-[50px] uppercase font-thin tracking-wider text-purple-500'>Store</h2>
 			<div className='w-[75vw] flex xs:justify-center lg:justify-end items-center mx-auto'>
 				<label className='mr-5' htmlFor='products'>

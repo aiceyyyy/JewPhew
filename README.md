@@ -21,4 +21,5 @@ Better README.md when project is finished!
 ❌Cart
 
 Info information as of 19/10/2023
+<br>
 ✅Fixed deployment error

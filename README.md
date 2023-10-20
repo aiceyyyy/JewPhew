@@ -6,20 +6,19 @@ Better README.md when project is finished!
 <br>
 ✅Home section
 <br>
-✅Resources section (🛠️remove section height - mobile covering)
+✅Resources section
 <br>
 ✅Products section with filter option
 <br>
+✅Contact Section
+<br>
 ⚒️Mobile menu(rebuilding logic)
 <br>
-❓Fix packages.json files (deployment error)
+⚒️Footer
 <br>
-❌Contact Section
-<br>
-❌Footer
-<br>
-❌RWD
-<br>
-❌SEO
+⚒️RWD
 <br>
 ❌Cart
+
+Info information as of 19/10/2023
+✅Fixed deployment error

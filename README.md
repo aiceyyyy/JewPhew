@@ -1,7 +1,7 @@
-# JewPhew
+# 💎JewPhew
 Better README.md when project is finished!
 
-# Progress
+# 🚧Progress
 ✅Navbar
 <br>
 ✅Home section
@@ -20,6 +20,6 @@ Better README.md when project is finished!
 <br>
 ❌Cart(gonna try ;p)
 
-## Information as of 19/10/2023
+## 📈Information as of 19/10/2023
 <br>
-✅Fixed deployment error
+✅Fixed deployment error (package.json versions conflict)

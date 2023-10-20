@@ -36,7 +36,7 @@ export const Footer = () => {
 
 	const madeWith = IMAGES.map(image => (
 		<a key={image.id} href={image.web} target='_blank' rel='noopener'>
-			<img className='xs:w-[200px] h-[125px] sm:w-[350px] sm:h-[200px] m-10' src={image.path} alt={image.content} />
+			<img className='xs:w-[200px] h-[125px] sm:w-[350px] sm:h-[225px] m-10' src={image.path} alt={image.content} />
 		</a>
 	))
 

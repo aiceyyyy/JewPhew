@@ -20,6 +20,6 @@ Better README.md when project is finished!
 <br>
 ❌Cart
 
-Info information as of 19/10/2023
+Information as of 19/10/2023
 <br>
 ✅Fixed deployment error

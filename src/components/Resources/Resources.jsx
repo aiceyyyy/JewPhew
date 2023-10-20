@@ -22,6 +22,7 @@ export const Resources = () => {
 					Gold is a chemical element with the symbol Au (from Latin aurum 'gold') and atomic number 79. It is a bright,
 					slightly orange-yellow, dense, soft, malleable, and ductile metal in pure form. Chemically, gold is a
 					transition metal and a group 11 element.
+					A relatively rare element,gold is a precious metal that's really wonderful. 
 				</p>
 			</div>
 			<div className='max-w-[250px] mx-3 my-3 py-5 px-3 rounded-xl'>

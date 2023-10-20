@@ -21,5 +21,4 @@ Better README.md when project is finished!
 ❌Cart(gonna try ;p)
 
 ## 📈Information as of 19/10/2023
-<br>
 ✅Fixed deployment error (package.json versions conflict)

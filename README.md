@@ -16,7 +16,7 @@ Better README.md when project is finished!
 <br>
 ✅RWD
 <br>
-⚒️Mobile menu(rebuilding logic and animation)
+⚒️Mobile menu(reset all files after next commit and rebuild all)
 <br>
 ❌Cart(gonna try ;p)
 

@@ -21,7 +21,6 @@ export const NavbarCart = (props) => {
 	const openNav = () => {
 		props.openNav()
 	}
-
 	return (
 		<div className='flex xs:p-3 sm:p-5 justify-between items-center text-4xl'>
 			<IoBagOutline className='relative xs:mr-5 lg:mr-0  text-white hover:text-white transition-all duration-300 cursor-pointer' />

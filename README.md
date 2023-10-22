@@ -16,9 +16,12 @@ Better README.md when project is finished!
 <br>
 ✅RWD
 <br>
-⚒️Mobile menu(reset all files after next commit and rebuild all)
+✅Mobile menu
 <br>
-❌Cart(gonna try ;p)
+⚒️Connecting form submit with backend (maybe PHP/Node.js)
+<br>
+❌Cart
+
 
 # 📈Information as of 19/10/2023
 ✅Fixed deployment error (package.json versions conflict)

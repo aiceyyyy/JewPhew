@@ -5,7 +5,6 @@ import { FaBars } from 'react-icons/fa6'
 export const NavbarCart = (props) => {
 	const [screenWidth, setScreenWidth] = useState(window.innerWidth)
 
-	// Handling window resize
 	const handleResize = () => {
 		setScreenWidth(window.innerWidth)
 	}

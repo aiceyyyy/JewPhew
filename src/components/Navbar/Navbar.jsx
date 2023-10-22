@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react'
 import { NavbarCart } from './NavbarCart'
 
-export const Navbar = () => {
+export const Navbar = (props) => {
 	const navTexts = [
 		{
 			id: 1,
@@ -52,6 +52,10 @@ export const Navbar = () => {
 		}
 	}, [])
 
+	const openNav = () => {
+		props.openNav()
+	}
+
 	return (
 		<div
 			style={{ backgroundColor: dynamicNavStyle }}
@@ -74,7 +78,7 @@ export const Navbar = () => {
 						</a>
 					))}
 			</div>
-			<NavbarCart />
+			<NavbarCart openNav={openNav} />
 		</div>
 	)
 }

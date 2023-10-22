@@ -1,9 +1,8 @@
-import { useState, useEffect} from 'react'
+import { useState, useEffect } from 'react'
 import { IoBagOutline } from 'react-icons/io5'
 import { FaBars } from 'react-icons/fa6'
 
-export const NavbarCart = () => {
-
+export const NavbarCart = (props) => {
 	const [screenWidth, setScreenWidth] = useState(window.innerWidth)
 
 	// Handling window resize
@@ -19,6 +18,10 @@ export const NavbarCart = () => {
 		}
 	}, [])
 
+	const openNav = () => {
+		props.openNav()
+	}
+
 	return (
 		<div className='flex xs:p-3 sm:p-5 justify-between items-center text-4xl'>
 			<IoBagOutline className='relative xs:mr-5 lg:mr-0  text-white hover:text-white transition-all duration-300 cursor-pointer' />
@@ -27,6 +30,7 @@ export const NavbarCart = () => {
 			</span>
 			{screenWidth < 798 && (
 				<FaBars
+					onClick={openNav}
 					className='flex justify-center items-center  text-white hover:text-white transition-all duration-300 cursor-pointer'
 				/>
 			)}

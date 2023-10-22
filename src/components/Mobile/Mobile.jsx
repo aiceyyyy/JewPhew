@@ -42,6 +42,7 @@ export const Mobile = props => {
 				</button>
 				{navTexts.map(text => (
 					<a
+						onClick={props.closeNav}
 						className='text-black p-1 my-5 hover:text-purple-500 transition-all duration-300'
 						href={text.tp}
 						key={text.id}>

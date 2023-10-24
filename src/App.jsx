@@ -1,5 +1,6 @@
 import './App.css'
 import { Home } from './components/Home/Home'
+import { Cart } from './components/Cart/Cart'
 import { Mobile } from './components/Mobile/Mobile'
 import { Navbar } from './components/Navbar/Navbar'
 import { Resources } from './components/Resources/Resources'
@@ -10,6 +11,7 @@ import { useState } from 'react'
 
 export const App = () => {
 	const [navStatus, setNavStatus] = useState(false)
+	const [cartStatus, setCartStatus] = useState(false)
 
 	const closeNav = () => {
 		setNavStatus(false)
@@ -19,13 +21,19 @@ export const App = () => {
 		setNavStatus(true)
 	}
 
+	const openCart = () => {
+		setCartStatus(true)
+	}
+
+	const closeCart = () => {
+		setCartStatus(false)
+	}
+
 	return (
 		<>
-			<Mobile 
-				closeNav={closeNav} 
-				statusDispatch={navStatus}
-			/>
-			<Navbar openNav={openNav} />
+			<Cart statusDispatch={cartStatus} closeCart={closeCart} />
+			<Mobile closeNav={closeNav} statusDispatch={navStatus} />
+			<Navbar openNav={openNav} openCart={openCart} />
 			<Home />
 			<Resources />
 			<ProductSection />

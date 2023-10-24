@@ -1,5 +1,5 @@
 import { FaArrowLeft } from 'react-icons/fa6'
-import boxAnimation from '../../assets/boxAnimation.gif'
+import boxAnimation from '../../assets/boxanimation.gif'
 import { CartProduct } from './CartProduct'
 
 const CART_PRODUCT_DATA = []

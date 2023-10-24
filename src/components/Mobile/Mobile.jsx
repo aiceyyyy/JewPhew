@@ -25,6 +25,12 @@ export const Mobile = props => {
 		},
 	]
 
+	if (props.statusDispatch) {
+		document.body.style.overflowY = 'hidden'
+	} else {
+		document.body.style.overflowY = 'scroll'
+	}
+
 	return (
 		<div
 			id='nav'

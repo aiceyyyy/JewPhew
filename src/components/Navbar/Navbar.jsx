@@ -56,6 +56,10 @@ export const Navbar = (props) => {
 		props.openNav()
 	}
 
+	const openCart = () => {
+		props.openCart()
+	}
+
 	return (
 		<div
 			style={{ backgroundColor: dynamicNavStyle }}
@@ -78,7 +82,7 @@ export const Navbar = (props) => {
 						</a>
 					))}
 			</div>
-			<NavbarCart openNav={openNav} />
+			<NavbarCart openCart={openCart} openNav={openNav} />
 		</div>
 	)
 }

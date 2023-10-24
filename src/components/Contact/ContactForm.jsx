@@ -1,8 +1,11 @@
 import { useState } from 'react'
 import { ToastContainer, toast } from 'react-toastify'
+import { db } from '../../firebaseConfig'
+import { addDoc, collection } from 'firebase/firestore'
 import 'react-toastify/dist/ReactToastify.css'
 
 export const ContactForm = () => {
+	const messageCollection = collection(db, 'messagedata')
 	const [isValid, setIsValid] = useState(true)
 	const [nameValue, setNameValue] = useState('')
 	const [emailValue, setEmailValue] = useState('')
@@ -105,12 +108,17 @@ export const ContactForm = () => {
 			return null
 		}
 
-		//! General form validation
 		if (isValid) {
+			addDoc(messageCollection, {
+				name: nameValue,
+				email: emailValue,
+				message: messageValue,
+			})
+
+			toast('Form sent succesfully!', successToast)
 			setNameValue('')
 			setEmailValue('')
 			setMessageValue('')
-			toast('Form sent succesfully!', successToast)
 		}
 	}
 

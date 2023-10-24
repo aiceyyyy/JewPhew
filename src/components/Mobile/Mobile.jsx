@@ -1,4 +1,4 @@
-import { FaArrowRight } from 'react-icons/fa6'
+import { FaArrowLeft } from 'react-icons/fa6'
 import classes from './Mobile.module.css'
 
 export const Mobile = props => {
@@ -35,8 +35,9 @@ export const Mobile = props => {
 		<div
 			id='nav'
 			className={`${classes.nav} ${
-				props.statusDispatch ? 'translate-x-[0%]' : 'translate-x-[-100%]'
+				props.statusDispatch ? 'translate-x-[0%]' : 'translate-x-[100%]'
 			} transition-all duration-300`}>
+			<div onClick={props.closeNav} className='w-3/5 backdrop-blur'></div>
 			<div className='flex flex-col justify-center items-center w-2/5 bg-white border-r border-r-black text-black'>
 				<a
 					onClick={props.closeNav}
@@ -47,7 +48,7 @@ export const Mobile = props => {
 				<button
 					onClick={props.closeNav}
 					className={`${classes.button} mb-10 py-3 px-5 bg-transparent hover:border-black transition-all duration-300`}>
-					<FaArrowRight />
+					<FaArrowLeft />
 				</button>
 				{navTexts.map(text => (
 					<a
@@ -59,7 +60,6 @@ export const Mobile = props => {
 					</a>
 				))}
 			</div>
-			<div onClick={props.closeNav} className='w-3/5 backdrop-blur'></div>
 		</div>
 	)
 }

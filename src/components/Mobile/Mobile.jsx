@@ -32,7 +32,10 @@ export const Mobile = props => {
 				props.statusDispatch ? 'translate-x-[0%]' : 'translate-x-[-100%]'
 			} transition-all duration-300`}>
 			<div className='flex flex-col justify-center items-center w-2/5 bg-white border-r border-r-black text-black'>
-				<a href='#' className='text-xl text-black hover:text-purple-500 mb-10 transition-all duration-300'>
+				<a
+					onClick={props.closeNav}
+					href='#'
+					className='text-xl text-black hover:text-purple-500 mb-10 transition-all duration-300'>
 					JewPhew
 				</a>
 				<button

@@ -39,7 +39,7 @@ export const Contact = () => {
 					<ContactForm />
 				</div>
 			</div>
-			<p className='w-1/3 mx-auto mt-10 text-center italic'>
+			<p className='xs:w-2/3 lg:w-1/3 mx-auto xs:mt-20 lg:mt-10 text-center italic'>
 				Completing the form means that the personal data you provide in it will
 				<span className='font-bold text-purple-500'> be processed</span> for the purpose of answering you. If your
 				question relates to our services, we may provide you with an

@@ -138,7 +138,7 @@ export const ContactForm = () => {
 	}
 
 	return (
-		<form className='flex flex-col justify-center items-center w-1/2 max-w-[450px] h-[300px] xs:ml-0 md:ml-5 xs:mt-10 md:mt-0'>
+		<form className='flex flex-col justify-center items-center xs:w-3/4 sm:w-1/2 max-w-[450px] h-[300px] xs:ml-0 md:ml-5 xs:mt-10 md:mt-0'>
 			<label htmlFor='name' className='self-start xs:ml-0 md:ml-5 text-2xl text-purple-500'>
 				Name
 			</label>

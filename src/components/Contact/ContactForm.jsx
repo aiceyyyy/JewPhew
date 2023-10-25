@@ -10,6 +10,8 @@ export const ContactForm = () => {
 	const [nameValue, setNameValue] = useState('')
 	const [emailValue, setEmailValue] = useState('')
 	const [messageValue, setMessageValue] = useState('')
+	const regex = /@([a-zA-Z]+)/
+	const domainRegex = /^[A-Za-z0-9.-]+\.[A-Za-z]{2,}$/
 	const nameRegex = /^[\d\s]+$/
 	const emailRegex = /^[0-9]+$/
 
@@ -87,6 +89,19 @@ export const ContactForm = () => {
 			return null
 		}
 
+		if (!regex.test(emailValue)) {
+			setIsValid(false)
+			toast('Email must contain a domain', errorToast)
+			return null
+		}
+
+
+		if (!domainRegex.test(emailValue.split('@')[1])) {
+			setIsValid(false)
+			toast('Email domain is not correct', errorToast)
+			return null
+		}
+
 		if (emailValue.includes(' ')) {
 			setIsValid(false)
 			toast('Email must not contain spaces', errorToast)
@@ -107,6 +122,8 @@ export const ContactForm = () => {
 			toast('Message must not contain more than 300 characters', errorToast)
 			return null
 		}
+
+		// Wyrażenie regularne do sprawdzenia, czy po znaku "@" są litery
 
 		if (isValid) {
 			addDoc(messageCollection, {

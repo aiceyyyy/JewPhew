@@ -18,7 +18,7 @@ Better README.md when project is finished!
 <br>
 ✅Mobile menu
 <br>
-✅Connecting form submit with backend (maybe PHP/Node.js)
+✅Connecting form submit Firebase
 <br>
 ⚒️Cart
 

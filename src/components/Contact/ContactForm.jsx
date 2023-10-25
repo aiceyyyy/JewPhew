@@ -123,8 +123,6 @@ export const ContactForm = () => {
 			return null
 		}
 
-		// Wyrażenie regularne do sprawdzenia, czy po znaku "@" są litery
-
 		if (isValid) {
 			addDoc(messageCollection, {
 				name: nameValue,

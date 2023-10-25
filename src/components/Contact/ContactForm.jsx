@@ -45,27 +45,27 @@ export const ContactForm = () => {
 		//! All basic inputs validation
 		if (nameValue === '' && emailValue === '' && messageValue === '') {
 			setIsValid(false)
-			toast('You cannot send empty form!', errorToast)
+			toast('You cannot send empty form', errorToast)
 			return null
 		}
 
 		if (nameValue === '') {
 			setIsValid(false)
-			toast('Name field cannot be empty!', errorToast)
+			toast('Name field cannot be empty', errorToast)
 			return null
 		} else {
 			setIsValid(true)
 		}
 		if (emailValue === '') {
 			setIsValid(false)
-			toast('Email field cannot be empty!', errorToast)
+			toast('Email field cannot be empty', errorToast)
 			return null
 		} else {
 			setIsValid(true)
 		}
 		if (messageValue === '') {
 			setIsValid(false)
-			toast('Message cannot be empty!', errorToast)
+			toast('Message cannot be empty', errorToast)
 			return null
 		} else {
 			setIsValid(true)
@@ -74,7 +74,7 @@ export const ContactForm = () => {
 		//! Name input validation
 		if (nameRegex.test(nameValue)) {
 			setIsValid(false)
-			toast('Name must not include numbers and/or be empty!', errorToast)
+			toast('Name must not include numbers and/or be empty', errorToast)
 			return null
 		} else {
 			setIsValid(true)
@@ -89,7 +89,7 @@ export const ContactForm = () => {
 
 		if (emailValue.includes(' ')) {
 			setIsValid(false)
-			toast('Email must not contain spaces!', errorToast)
+			toast('Email must not contain spaces', errorToast)
 			return null
 		} else {
 			setIsValid(true)
@@ -97,14 +97,14 @@ export const ContactForm = () => {
 
 		if (emailRegex.test(emailValue)) {
 			setIsValid(false)
-			toast('Email cannot be only numbers!', errorToast)
+			toast('Email cannot be only numbers', errorToast)
 			return null
 		}
 
 		//! Message input validation
 		if (messageValue.length > 300) {
 			setIsValid(false)
-			toast('Message must not contain more than 300 characters!', errorToast)
+			toast('Message must not contain more than 300 characters', errorToast)
 			return null
 		}
 

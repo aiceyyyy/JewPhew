@@ -82,6 +82,12 @@ export const ContactForm = () => {
 			setIsValid(true)
 		}
 
+		if(nameValue.length < 3) {
+			setIsValid(false)
+			toast('Name must minimum 3 characters long', errorToast)
+			return null
+		}
+
 		//! Email input validation
 		if (!emailValue.includes('@')) {
 			toast('Email must include "@"', errorToast)
@@ -94,7 +100,6 @@ export const ContactForm = () => {
 			toast('Email must contain a domain', errorToast)
 			return null
 		}
-
 
 		if (!domainRegex.test(emailValue.split('@')[1])) {
 			setIsValid(false)
@@ -123,11 +128,23 @@ export const ContactForm = () => {
 			return null
 		}
 
+		if (messageValue.length < 10) {
+			setIsValid(false)
+			toast('Message must be minimum 10 characters long', errorToast)
+			return null
+		}
+
+		if (messageValue.trim().length < 10) {
+			setIsValid(false)
+			toast('Message must not contain mostly spaces', errorToast)
+			return null
+		}
+
 		if (isValid) {
 			addDoc(messageCollection, {
 				name: nameValue,
 				email: emailValue,
-				message: messageValue,
+				message: messageValue.trim(),
 			})
 
 			toast('Form sent succesfully!', successToast)

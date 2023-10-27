@@ -13,7 +13,7 @@ export const App = () => {
 	const [navStatus, setNavStatus] = useState(false)
 	const [cartStatus, setCartStatus] = useState(false)
 	const [product, setProduct] = useState([])
-	let i
+	const [idCounter, setIdCounter] = useState(1)
 
 	const closeNav = () => {
 		setNavStatus(false)
@@ -33,15 +33,15 @@ export const App = () => {
 
 	const collectCartAddedProduct = data => {
 		const newProduct = {
-			id: i,
+			id: `c${idCounter}`,
 			path: data.path,
 			price: data.price,
 			name: data.name,
 			content: data.content,
 		}
 
+		setIdCounter(prevCounter => prevCounter + 1)
 		setProduct(prevProducts => [...prevProducts, newProduct])
-		i++
 	}
 
 	return (

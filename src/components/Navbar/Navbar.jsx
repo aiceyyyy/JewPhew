@@ -1,12 +1,12 @@
 import { useState, useEffect } from 'react'
 import { NavbarCart } from './NavbarCart'
 
-export const Navbar = (props) => {
+export const Navbar = props => {
 	const navTexts = [
 		{
 			id: 1,
 			content: 'Home',
-			tp: '#'
+			tp: '#',
 		},
 		{
 			id: 2,
@@ -16,12 +16,12 @@ export const Navbar = (props) => {
 		{
 			id: 3,
 			content: 'Store',
-			tp: '#store'
+			tp: '#store',
 		},
 		{
 			id: 4,
 			content: 'Contact',
-			tp: '#contact'
+			tp: '#contact',
 		},
 	]
 
@@ -82,7 +82,7 @@ export const Navbar = (props) => {
 						</a>
 					))}
 			</div>
-			<NavbarCart openCart={openCart} openNav={openNav} />
+			<NavbarCart productAmount={props.productAmount} openCart={openCart} openNav={openNav} />
 		</div>
 	)
 }

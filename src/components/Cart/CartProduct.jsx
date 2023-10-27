@@ -8,8 +8,8 @@ export const CartProduct = props => {
 	}
 
 	return (
-		<div className='flex xs:flex-col xxl:flex-row justify-around items-center mt-10 border-b-2 xs:w-full sm:w-4/5 max-w-[900px] xs:px-5 lg:px-10 py-10 rounded-lg bg-white mx-auto border-black text-black'>
-			<img className='rounded-lg h-[200px] w-[250px]' src={props.data.img} alt='product photo' />
+		<div className='flex xs:flex-col xxl:flex-row justify-around items-center mt-10 border-b-2 xs:w-full sm:w-4/5 max-w-[900px] xs:px-5 lg:px-10 py-10 bg-white mx-auto border-black text-black'>
+			<img className='rounded-lg h-[200px] w-[250px]' src={props.data.path} alt='product photo' />
 			<div className='flex flex-col max-w-[300px] px-5 xs:mb-5 lg:mb-0'>
 				<p className='text-2xl text-slate-700 font-semibold'>{props.data.name}</p>
 				<p className='text-purple-500 font-bold'>{props.data.price}</p>

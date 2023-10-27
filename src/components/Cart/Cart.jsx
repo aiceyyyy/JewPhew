@@ -2,8 +2,6 @@ import { FaArrowLeft } from 'react-icons/fa6'
 import boxAnimation from '../../assets/boxanimation.gif'
 import { CartProduct } from './CartProduct'
 
-const CART_PRODUCT_DATA = []
-
 export const Cart = props => {
 	if (props.statusDispatch) {
 		document.body.style.overflowY = 'hidden'
@@ -27,9 +25,8 @@ export const Cart = props => {
 					Your Cart
 				</h2>
 			</div>
-			{/* Nothing to see */}
 			<div className='flex flex-col xs:w-4/5 md:w-3/5 rounded-lg text-center mx-auto py-5 bg-white text-black'>
-				{CART_PRODUCT_DATA.length === 0 && (
+				{props.PRODUCT_DATA.length === 0 && (
 					<div>
 						<p className='w-1/2 mx-auto font-semibold'>It's nothing to see here yet...</p>
 						<img
@@ -40,11 +37,13 @@ export const Cart = props => {
 					</div>
 				)}
 
-				{CART_PRODUCT_DATA.map(product => (
-					<CartProduct key={product.id} data={product} />
+				{props.PRODUCT_DATA.map(product => (
+					<CartProduct key={Math.random()} data={product} />
 				))}
 
-				<p className='py-7 text-xl font-bold text-purple-500'>Total amount: $0</p>
+				<p className='py-7 text-xl font-bold text-purple-500'>
+					Total amount: Building...
+				</p>
 			</div>
 		</div>
 	)

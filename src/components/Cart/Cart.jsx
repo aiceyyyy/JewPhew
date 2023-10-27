@@ -3,6 +3,7 @@ import boxAnimation from '../../assets/boxanimation.gif'
 import { CartProduct } from './CartProduct'
 
 export const Cart = props => {
+	
 	if (props.statusDispatch) {
 		document.body.style.overflowY = 'hidden'
 	} else {
@@ -38,12 +39,10 @@ export const Cart = props => {
 				)}
 
 				{props.PRODUCT_DATA.map(product => (
-					<CartProduct key={Math.random()} data={product} />
+					<CartProduct key={product.id} data={product} />
 				))}
 
-				<p className='py-7 text-xl font-bold text-purple-500'>
-					Total amount: Building...
-				</p>
+				<p className='py-7 text-xl font-bold text-purple-500'>Total amount: $0</p>
 			</div>
 		</div>
 	)

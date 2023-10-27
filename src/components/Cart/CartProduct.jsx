@@ -1,6 +1,7 @@
 import { useState } from 'react'
 
 export const CartProduct = props => {
+
 	const [amountValue, setAmountValue] = useState(1)
 
 	const trackAmount = e => {
@@ -28,7 +29,9 @@ export const CartProduct = props => {
 					step='1'
 				/>
 
-				<button className='bg-purple-500 mx-auto text-white hover:border-white px-5 mt-5'>Remove product</button>
+				<button className='bg-purple-500 mx-auto text-white hover:border-white px-5 mt-5'>
+					Remove product
+				</button>
 			</div>
 		</div>
 	)

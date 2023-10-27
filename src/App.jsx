@@ -7,11 +7,13 @@ import { Resources } from './components/Resources/Resources'
 import { ProductSection } from './components/Products/ProductSection'
 import { Contact } from './components/Contact/Contact'
 import { Footer } from './components/Footer/Footer'
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 
 export const App = () => {
 	const [navStatus, setNavStatus] = useState(false)
 	const [cartStatus, setCartStatus] = useState(false)
+	const [product, setProduct] = useState([])
+	let i
 
 	const closeNav = () => {
 		setNavStatus(false)
@@ -29,14 +31,27 @@ export const App = () => {
 		setCartStatus(false)
 	}
 
+	const collectCartAddedProduct = data => {
+		const newProduct = {
+			id: i,
+			path: data.path,
+			price: data.price,
+			name: data.name,
+			content: data.content,
+		}
+
+		setProduct(prevProducts => [...prevProducts, newProduct])
+		i++
+	}
+
 	return (
 		<>
-			<Cart statusDispatch={cartStatus} closeCart={closeCart} />
+			<Cart PRODUCT_DATA={product} statusDispatch={cartStatus} closeCart={closeCart} />
 			<Mobile closeNav={closeNav} statusDispatch={navStatus} />
-			<Navbar openNav={openNav} openCart={openCart} />
+			<Navbar productAmount={product.length} openNav={openNav} openCart={openCart} />
 			<Home />
 			<Resources />
-			<ProductSection />
+			<ProductSection collectCartAddedProduct={collectCartAddedProduct} />
 			<Contact />
 			<Footer />
 		</>

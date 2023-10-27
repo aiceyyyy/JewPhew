@@ -26,13 +26,13 @@ import d3 from '../../products_assets/diamond/diamond3.jpeg'
 import d4 from '../../products_assets/diamond/diamond4.jpeg'
 import d5 from '../../products_assets/diamond/diamond5.jpeg'
 
-export const ProductSection = () => {
+export const ProductSection = (props) => {
 	const PRODUCTS_DATA = [
 		//? Gold
 		{
 			id: 'p1',
 			path: g1,
-			price: '$129.99',
+			price: 129.99,
 			name: 'Ring',
 			content: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, officiis?',
 			type: 'GOLD',
@@ -40,7 +40,7 @@ export const ProductSection = () => {
 		{
 			id: 'p2',
 			path: g2,
-			price: '$299.99',
+			price: 299.99,
 			name: 'Ring',
 			content: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, officiis?',
 			type: 'GOLD',
@@ -48,7 +48,7 @@ export const ProductSection = () => {
 		{
 			id: 'p3',
 			path: g3,
-			price: '$799.99',
+			price: 799.99,
 			name: 'Necklace',
 			content: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, officiis?',
 			type: 'GOLD',
@@ -56,7 +56,7 @@ export const ProductSection = () => {
 		{
 			id: 'p4',
 			path: g4,
-			price: '$99.99',
+			price: 99.99,
 			name: 'Ring',
 			content: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, officiis?',
 			type: 'GOLD',
@@ -64,7 +64,7 @@ export const ProductSection = () => {
 		{
 			id: 'p5',
 			path: g5,
-			price: '$249.99',
+			price: 249.99,
 			name: 'Chainline',
 			content: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, officiis?',
 			type: 'GOLD',
@@ -72,7 +72,7 @@ export const ProductSection = () => {
 		{
 			id: 'p6',
 			path: g6,
-			price: '$124.99',
+			price: 124.99,
 			name: 'Ring',
 			content: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, officiis?',
 			type: 'GOLD',
@@ -80,7 +80,7 @@ export const ProductSection = () => {
 		{
 			id: 'p7',
 			path: g7,
-			price: '$2499.99',
+			price: 2499.99,
 			name: 'Chain',
 			content: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, officiis?',
 			type: 'GOLD',
@@ -96,7 +96,7 @@ export const ProductSection = () => {
 		{
 			id: 'p9',
 			path: g9,
-			price: '$289.99',
+			price: 289.99,
 			name: 'Pendant',
 			content: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, officiis?',
 			type: 'GOLD',
@@ -104,7 +104,7 @@ export const ProductSection = () => {
 		{
 			id: 'p10',
 			path: g10,
-			price: '$999.99',
+			price: 999.99,
 			name: 'Chain',
 			content: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, officiis?',
 			type: 'GOLD',
@@ -113,7 +113,7 @@ export const ProductSection = () => {
 		{
 			id: 'p11',
 			path: s1,
-			price: '$109.99',
+			price: 109.99,
 			name: 'Ornaments',
 			content: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, officiis?',
 			type: 'SILVER',
@@ -121,7 +121,7 @@ export const ProductSection = () => {
 		{
 			id: 'p12',
 			path: s2,
-			price: '$129.99',
+			price: 129.99,
 			name: 'Chainline',
 			content: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, officiis?',
 			type: 'SILVER',
@@ -129,7 +129,7 @@ export const ProductSection = () => {
 		{
 			id: 'p13',
 			path: s3,
-			price: '$74.99',
+			price: 74.99,
 			name: 'Ring',
 			content: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, officiis?',
 			type: 'SILVER',
@@ -137,7 +137,7 @@ export const ProductSection = () => {
 		{
 			id: 'p14',
 			path: s4,
-			price: '$89.99',
+			price: 89.99,
 			name: 'Ring',
 			content: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, officiis?',
 			type: 'SILVER',
@@ -145,7 +145,7 @@ export const ProductSection = () => {
 		{
 			id: 'p15',
 			path: s5,
-			price: '$159.99',
+			price: 159.99,
 			name: 'Bracelet',
 			content: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, officiis?',
 			type: 'SILVER',
@@ -153,7 +153,7 @@ export const ProductSection = () => {
 		{
 			id: 'p16',
 			path: s6,
-			price: '$139.99',
+			price: 139.99,
 			name: 'Ring',
 			content: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, officiis?',
 			type: 'SILVER',
@@ -169,7 +169,7 @@ export const ProductSection = () => {
 		{
 			id: 'p18',
 			path: s8,
-			price: '$139.99',
+			price: 139.99,
 			name: 'Ring',
 			content: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, officiis?',
 			type: 'SILVER',
@@ -177,7 +177,7 @@ export const ProductSection = () => {
 		{
 			id: 'p19',
 			path: s9,
-			price: '$199.99',
+			price: 199.99,
 			name: 'Earrings',
 			content: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, officiis?',
 			type: 'SILVER',
@@ -185,7 +185,7 @@ export const ProductSection = () => {
 		{
 			id: 'p20',
 			path: s10,
-			price: '$249.99',
+			price: 249.99,
 			name: 'Ring',
 			content: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, officiis?',
 			type: 'SILVER',
@@ -239,9 +239,15 @@ export const ProductSection = () => {
 		setSelectedFilter(e.target.value.toUpperCase())
 	}
 
+	const collectAddedToCart = (data) => {
+		props.collectCartAddedProduct(data)
+	}
+
 	return (
 		<div id='store' className='mb-20 pt-20 pb-0'>
-			<h2 className='w-[75vw] text-center mx-auto mt-20 text-[50px] uppercase font-thin tracking-wider text-purple-500'>Store</h2>
+			<h2 className='w-[75vw] text-center mx-auto mt-20 text-[50px] uppercase font-thin tracking-wider text-purple-500'>
+				Store
+			</h2>
 			<div className='w-[75vw] flex xs:justify-center lg:justify-end items-center mx-auto'>
 				<label className='mr-5' htmlFor='products'>
 					Filter products
@@ -257,6 +263,7 @@ export const ProductSection = () => {
 				<div className='flex flex-wrap justify-center'>
 					{PRODUCTS_DATA.filter(product => selectedFilter === 'ALL' || product.type === selectedFilter).map(product => (
 						<Product
+							collectAddedToCart={collectAddedToCart}
 							key={product.id}
 							path={product.path}
 							price={product.price}

@@ -1,13 +1,13 @@
+import { useState } from 'react'
 import { FaArrowLeft } from 'react-icons/fa6'
-import boxAnimation from '../../assets/boxanimation.gif'
 import { CartProduct } from './CartProduct'
 
 export const Cart = props => {
-	
-	if (props.statusDispatch) {
-		document.body.style.overflowY = 'hidden'
-	} else {
-		document.body.style.overflowY = 'scroll'
+	const [totalPrice, setTotalPrice] = useState(0)
+
+	const collectProductPrice = data => {
+		setTotalPrice(data)
+		console.log(data)
 	}
 
 	return (
@@ -30,19 +30,19 @@ export const Cart = props => {
 				{props.PRODUCT_DATA.length === 0 && (
 					<div>
 						<p className='w-1/2 mx-auto font-semibold'>It's nothing to see here yet...</p>
-						<img
-							className='flex justify-center items-center mx-auto mt-5 w-[200px]'
-							src={boxAnimation}
-							alt='woman shaking the empty box'
-						/>
+						<iframe
+							className='flex justify-center items-center mt-2 mx-auto'
+							src='https://lottie.host/?file=284e14de-b60c-4851-85c6-37228a9a043e/KT9MmzAVN2.json'></iframe>
 					</div>
 				)}
 
 				{props.PRODUCT_DATA.map(product => (
-					<CartProduct key={product.id} data={product} />
+					<CartProduct collectProductPrice={collectProductPrice} key={product.id} data={product} />
 				))}
 
-				<p className='py-7 text-xl font-bold text-purple-500'>Total amount: $0</p>
+				<p className='py-7 text-xl font-bold text-purple-500'>
+					Total amount: ${totalPrice === 0 ? 0 : totalPrice.toFixed(2)}
+				</p>
 			</div>
 		</div>
 	)

@@ -1,8 +1,11 @@
 import { FaArrowLeft } from 'react-icons/fa6'
 import { CartProduct } from './CartProduct'
+import { useContext } from 'react'
+import { CartCtx } from '../../CartCtx/CartCtx'
 
 export const Cart = props => {
-	const PRODUCT_DATA = []
+	const ctx = useContext(CartCtx)
+	const PRODUCT_DATA = ctx.items
 
 	return (
 		<div
@@ -31,10 +34,10 @@ export const Cart = props => {
 				)}
 
 				{PRODUCT_DATA.map(product => (
-					<CartProduct key={product.id} data={product} />
+					<CartProduct key={product.id} id={product.id} data={product} />
 				))}
 
-				<p className='py-7 text-lg font-bold text-purple-500'>Total amount: $0</p>
+				<p className='py-7 text-lg font-bold text-purple-500'>Total amount: ${ctx.totalAmount.toFixed(2)}</p>
 			</div>
 		</div>
 	)

@@ -3,8 +3,8 @@ import { FaGithub, FaInstagram, FaDiscord } from 'react-icons/fa6'
 
 export const Contact = () => {
 	return (
-		<div className='mb-20 pt-44 py-24'>
-			<div id='contact' className='w-full '>
+		<div id='contact' className='mb-20 pt-20 py-24'>
+			<div  className='w-full '>
 				<h2 className='w-90vw text-center mx-auto mt-20 text-[50px] uppercase font-thin tracking-wider text-purple-500 mb-10'>
 					Contact
 				</h2>

@@ -26,7 +26,7 @@ import d3 from '../../products_assets/diamond/diamond3.jpeg'
 import d4 from '../../products_assets/diamond/diamond4.jpeg'
 import d5 from '../../products_assets/diamond/diamond5.jpeg'
 
-export const ProductSection = (props) => {
+export const ProductSection = props => {
 	const PRODUCTS_DATA = [
 		//? Gold
 		{
@@ -240,8 +240,9 @@ export const ProductSection = (props) => {
 	}
 
 	return (
-		<div id='store' className='mb-20 pt-20 pb-0'>
-			<h2 className='w-[75vw] text-center mx-auto mt-20 text-[50px] uppercase font-thin tracking-wider text-purple-500'>
+		<div id='store' className='mb-20 pt-1 pb-0'>
+			<h2
+				className='w-[75vw] text-center mx-auto mt-40 text-[50px] uppercase font-thin tracking-wider text-purple-500'>
 				Store
 			</h2>
 			<div className='w-[75vw] flex xs:justify-center lg:justify-end items-center mx-auto'>
@@ -260,6 +261,7 @@ export const ProductSection = (props) => {
 					{PRODUCTS_DATA.filter(product => selectedFilter === 'ALL' || product.type === selectedFilter).map(product => (
 						<Product
 							key={product.id}
+							id={product.id}
 							path={product.path}
 							price={product.price}
 							name={product.name}

@@ -34,7 +34,7 @@ export const NavbarCart = props => {
 			<span
 				onClick={openCart}
 				className='absolute top-1/2 flex justify-center items-center ml-5 bg-slate-300 w-[20px] h-[20px] text-sm rounded-full text-slate-700 font-bold hover:text-purple-500 cursor-pointer transition-all duration-300'>
-				{props.productAmount}
+				0
 			</span>
 			{screenWidth < 798 && (
 				<FaBars

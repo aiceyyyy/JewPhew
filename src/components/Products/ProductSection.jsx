@@ -239,10 +239,6 @@ export const ProductSection = (props) => {
 		setSelectedFilter(e.target.value.toUpperCase())
 	}
 
-	const collectAddedToCart = (data) => {
-		props.collectCartAddedProduct(data)
-	}
-
 	return (
 		<div id='store' className='mb-20 pt-20 pb-0'>
 			<h2 className='w-[75vw] text-center mx-auto mt-20 text-[50px] uppercase font-thin tracking-wider text-purple-500'>
@@ -263,7 +259,6 @@ export const ProductSection = (props) => {
 				<div className='flex flex-wrap justify-center'>
 					{PRODUCTS_DATA.filter(product => selectedFilter === 'ALL' || product.type === selectedFilter).map(product => (
 						<Product
-							collectAddedToCart={collectAddedToCart}
 							key={product.id}
 							path={product.path}
 							price={product.price}

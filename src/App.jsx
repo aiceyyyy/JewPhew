@@ -12,8 +12,6 @@ import { useState } from 'react'
 export const App = () => {
 	const [navStatus, setNavStatus] = useState(false)
 	const [cartStatus, setCartStatus] = useState(false)
-	const [product, setProduct] = useState([])
-	const [idCounter, setIdCounter] = useState(1)
 
 	const closeNav = () => {
 		setNavStatus(false)
@@ -31,27 +29,14 @@ export const App = () => {
 		setCartStatus(false)
 	}
 
-	const collectCartAddedProduct = data => {
-		const newProduct = {
-			id: `c${idCounter}`,
-			path: data.path,
-			price: data.price,
-			name: data.name,
-			content: data.content,
-		}
-
-		setIdCounter(prevCounter => prevCounter + 1)
-		setProduct(prevProducts => [...prevProducts, newProduct])
-	}
-
 	return (
 		<>
-			<Cart PRODUCT_DATA={product} statusDispatch={cartStatus} closeCart={closeCart} />
+			<Cart statusDispatch={cartStatus} closeCart={closeCart} />
 			<Mobile closeNav={closeNav} statusDispatch={navStatus} />
-			<Navbar productAmount={product.length} openNav={openNav} openCart={openCart} />
+			<Navbar openNav={openNav} openCart={openCart} />
 			<Home />
 			<Resources />
-			<ProductSection collectCartAddedProduct={collectCartAddedProduct} />
+			<ProductSection />
 			<Contact />
 			<Footer />
 		</>

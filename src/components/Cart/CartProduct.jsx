@@ -1,17 +1,4 @@
-import { useEffect, useState } from 'react'
-
 export const CartProduct = props => {
-	const [inputQuantity, setInputQuantity] = useState(1)
-
-	useEffect(() => {
-		props.collectProductPrice(1 * props.data.price)
-	}, [])
-
-	const trackAmount = e => {
-		setInputQuantity(e.target.value)
-		props.collectProductPrice(parseInt(e.target.value) * props.data.price)
-	}
-
 	return (
 		<div className='flex xs:flex-col xxl:flex-row justify-around items-center mt-10 border-b-2 xs:w-full sm:w-4/5 max-w-[900px] xs:px-5 lg:px-10 py-10 bg-white mx-auto border-black text-black'>
 			<img className='rounded-lg h-[200px] w-[250px]' src={props.data.path} alt='product photo' />
@@ -22,8 +9,6 @@ export const CartProduct = props => {
 			</div>
 			<div className='flex flex-col px-5'>
 				<input
-					onChange={trackAmount}
-					value={inputQuantity}
 					type='number'
 					className='text-center mx-auto rounded-lg w-[75px] text-white bg-[#333] px-2 py-2'
 					name='product amount'

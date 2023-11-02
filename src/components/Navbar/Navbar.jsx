@@ -82,7 +82,7 @@ export const Navbar = props => {
 						</a>
 					))}
 			</div>
-			<NavbarCart productAmount={props.productAmount} openCart={openCart} openNav={openNav} />
+			<NavbarCart openCart={openCart} openNav={openNav} />
 		</div>
 	)
 }

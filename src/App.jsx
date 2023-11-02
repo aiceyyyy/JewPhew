@@ -8,6 +8,7 @@ import { ProductSection } from './components/Products/ProductSection'
 import { Contact } from './components/Contact/Contact'
 import { Footer } from './components/Footer/Footer'
 import { useState } from 'react'
+import { CartCtxProvider } from './CartCtx/CartCtxProvider'
 
 export const App = () => {
 	const [navStatus, setNavStatus] = useState(false)
@@ -30,15 +31,15 @@ export const App = () => {
 	}
 
 	return (
-		<>
+		<CartCtxProvider>
 			<Cart statusDispatch={cartStatus} closeCart={closeCart} />
-			<Mobile closeNav={closeNav} statusDispatch={navStatus} />
+			<Mobile statusDispatch={navStatus} closeNav={closeNav} />
 			<Navbar openNav={openNav} openCart={openCart} />
 			<Home />
 			<Resources />
 			<ProductSection />
 			<Contact />
 			<Footer />
-		</>
+		</CartCtxProvider>
 	)
 }

@@ -162,7 +162,7 @@ export const ContactForm = () => {
 			<input
 				value={nameValue}
 				onChange={collectName}
-				id='name&surname'
+				id='name'
 				className=' max-w-[550px] self-start md:ml-5 xs:w-[100%]  my-2 py-2 px-2 bg-white rounded-lg border-purple-500 text-slate-700 placeholder:text-gray-800'
 				type='text'
 			/>

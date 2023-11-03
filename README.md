@@ -83,7 +83,7 @@
 <br>
 ✅Connecting form submit with Firebase
 <br>
-✅/❌Cart
+✅Cart
 
 ## Information as of 19/10/2023📈
 

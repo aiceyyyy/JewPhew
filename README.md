@@ -1,4 +1,4 @@
-# 💎JewPhew
+# JewPhew💎
 
 ## Main page view
 
@@ -44,7 +44,7 @@
 
 ![Footer section view](./design/Screenshot_8.png)
 
-## Technologies
+## Technologies⚒️
 
 - **React+JS** for main web build
 - **Module.css** & **TailwindCSS** for styling
@@ -55,7 +55,7 @@
 - **React Icons** for nice icons
 - **Toastify** for displaying cool errors
 
-## What is User able to do?
+## What is User able to do🔍
 
 - **Read** a lot of information about the properties of raw materials such as gold, silver and diamonds.
 - **Browse** all the products offered by JewPhew and **filter** them by their material of manufacture.
@@ -63,7 +63,7 @@
 - **Receive** a redirect to the JewPhew owner's accounts on github, instagram and discord.
 - **Add** products to the shopping cart and **remove** them.
 
-## 🚧Progress
+## Progress🚧
 
 ✅Navbar
 <br>
@@ -85,6 +85,6 @@
 <br>
 ✅/❌Cart
 
-## 📈Information as of 19/10/2023
+## Information as of 19/10/2023📈
 
 ✅Fixed deployment error (package.json versions conflict)

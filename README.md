@@ -2,16 +2,27 @@
 
 ## Website preview
 
+Main page view
 ![Main page view](./design/Screenshot_3.png)
+Resources section view
 ![Resources section view](./design/Screenshot_1.png)
+Store section view
 ![Store section view](./design/Screenshot_2.png)
+Used filter Gold in Store section
 ![Used filter Gold in Store section](./design/Screenshot_6.png)
+Used filter Silver in Store section
 ![Used filter Silver in Store section](./design/Screenshot_5.png)
+Used filter Diamond in Store section
 ![Used filter Diamond in Store section](./design/Screenshot_4.png)
+Contact section view
 ![Contact section view](./design/Screenshot_7.png)
+Mobile navigation view
 ![Mobile navigation view](./design/Screenshot_9.png)
-![Empty cart](./design/Screenshot_11.png)
-![Cart with product](./design/Screenshot_10.png)
+Empty cart view
+![Empty cart view](./design/Screenshot_11.png)
+Cart with product view
+![Cart with product view](./design/Screenshot_10.png)
+Footer section view
 ![Footer section view](./design/Screenshot_8.png)
 
 ## Technologies

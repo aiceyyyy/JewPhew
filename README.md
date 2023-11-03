@@ -1,7 +1,5 @@
 # 💎JewPhew
 
-## Website preview
-
 Main page view
 ![Main page view](./design/Screenshot_3.png)
 Resources section view

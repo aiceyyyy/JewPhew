@@ -30,7 +30,7 @@
 
 ## Mobile navigation view
 
-![Mobile navigation view](./design/Screenshot_9.png)
+![Mobile navigation view](./design/Screenshot_13.png)
 
 ## Empty cart view
 

@@ -5,8 +5,9 @@ export const CartProduct = props => {
 	const ctx = useContext(CartCtx)
 
 	const removeItemFromCartHandler = id => {
-		ctx.removeItem(id)
-	}
+        ctx.removeItem(props.id)
+    }
+
 
 	return (
 		<div className='flex xs:flex-col xxl:flex-row justify-around items-center mt-10 border-b-2 xs:w-full sm:w-4/5 max-w-[900px] xs:px-5 lg:px-10 py-10 bg-white mx-auto border-black text-black'>
